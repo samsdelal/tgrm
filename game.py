@@ -3,6 +3,7 @@ from telebot import types
 
 bot = t.TeleBot('924946285:AAEtfhMLLDkBJ-nat40GGmF6nQnDpc8IFsE')
 
+#Чтобы запустить данный проект , должен быть установлен VPN на компьютер 
 
 @bot.message_handler(commands=['start', 'help'], content_types=['text'])
 def help_message(message):
