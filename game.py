@@ -84,31 +84,4 @@ def sticker_id(message):
 
 
 bot.polling()
-''';import pygame as p
-import sys
 
-p.init()
-window_parameter = p.display.set_mode((900, 400))
-
-p.display.set_caption("Happy PyCharm")
-
-x = 40
-y = 40
-width = 40
-height = 40
-speed = 15
-
-work_time = True
-
-while work_time:
-    p.time.delay(100)
-
-    for event in p.event.get():
-        if event.type == p.QUIT():
-            work_time = False
-
-    p.draw.rect(window_parameter, (30, 144, 255), (x ,y ,width ,height))
-    p.display.update()
-
- p.quit()
-'''
